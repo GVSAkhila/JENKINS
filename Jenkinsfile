@@ -18,4 +18,3 @@ pipeline {
         }
     }
 }
-s

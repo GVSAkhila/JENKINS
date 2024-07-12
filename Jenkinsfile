@@ -11,7 +11,7 @@ pipeline {
                 sh '''
                     ls -ltr
                     pwd
-                    echo "hello script"
+                    echo "hello from webhook script"
                 '''
             }
         }

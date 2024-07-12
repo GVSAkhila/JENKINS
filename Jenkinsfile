@@ -8,6 +8,11 @@ pipeline {
         stage('Build') { 
             steps {
                 echo 'building'
+                sh '''
+                 'ls -ltr'
+                 'pwd'
+                 'hellow script'
+                '''
             }
         }
         stage('Test') { 

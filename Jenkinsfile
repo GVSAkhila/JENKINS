@@ -1,5 +1,9 @@
 pipeline {
-    agent { node {label 'Agent'}}
+    agent { 
+        node { 
+            label 'Agent' 
+        } 
+    }
     stages {
         stage('Build') { 
             steps {
@@ -17,8 +21,7 @@ pipeline {
             }
         }
     }
-}
-post {
+    post {
         always {
             echo 'This will always run'
         }
@@ -29,3 +32,4 @@ post {
             echo 'This will run only if the pipeline fails'
         }
     }
+}

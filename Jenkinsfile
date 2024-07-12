@@ -9,9 +9,9 @@ pipeline {
             steps {
                 echo 'building'
                 sh '''
-                 'ls -ltr'
-                 'pwd'
-                 'hellow script'
+                    ls -ltr
+                    pwd
+                    echo "hello script"
                 '''
             }
         }
